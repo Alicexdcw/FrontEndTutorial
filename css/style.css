@@ -3,18 +3,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     font-family: 'Poppins', sans-serif;
 }
 
 section{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
+    /*設置位置*/
+    position: relative; /*相對位置*/
+    /*設置寬高*/
+    width: 100%; /*寬*/
+    min-height: 100vh; /*不管裡面有沒有東西，先把高度撐篙*/
     padding: 100px;
-    display: flex;
+    /*排列方式*/
+    /* display: flex;
     justify-content: space-between; 
-    align-items: center;
+    align-items: center; */
     background: #fff;
 }
 
@@ -25,13 +28,13 @@ header{
     width: 100%;
     padding: 20px 100px;
     display: flex;
-    justify-content: space-between; 
     align-items: center;
+    /* justify-content: space-between;  */
 }
 
 .logo{
     position: relative;
-    max-width: 80%;
+    max-width: 80px;
 }
 
 header ul{
