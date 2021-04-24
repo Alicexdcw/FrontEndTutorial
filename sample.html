@@ -1,57 +1,130 @@
 <!DOCTYPE html> <!-- 告訴瀏覽器這是一份以「HTML標記語言(markup language)」所撰寫的文件，所以請用HTML的定義來解讀我 -->
 <!-- 當瀏覽器讀取到第一行看到<!DOCTYPE html>這行宣告時，瀏覽器就知道說，「喔，這份文件內容是HTML標記語言撰寫的，所以我必須用我的HTML翻譯器來解讀」。 -->
 <html>
-    <head>
-        <title>First Web</title>
-        <style>
-            h1{
-                color:tomato;
-                font-size: 60px;
-            }
-            .text{
-                color:brown;
-                font-size:30px;
-            }
-            .quote{
-                background-color:rgb(212, 212, 212);
-            }
-        </style>
-    </head>
-    <body>
-        <h1 style="color: blueviolet; font-size:60px;">My First post</h1>
-        <h2>My First post</h2>
-        <h3>My First post</h3>
-        <h4>SubHeading</h4>
-        <h5>SubHeading</h5>
-        <h6>SubHeading</h6>
-        <p class="text">
-            
-            What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-      
-</p>
-<span style="color:dimgrey">Read more...</span>  
-        
-        <div class="quote">
-            What is Lorem Ipsum?
-l be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).        
-</div>
-        
-        <a href="https://www.youtube.com/">go to youtube</a>
-        <img src="https://i.imgur.com/2oTquxi.png" alt="facebook">
-        <ul>
-            <li>test1</li>
-            <li>test2</li>
-            <li>test3</li>
-            <li>test4</li>
-        </ul>
-<hr>
-        <ol>
-            <li>test1</li>
-            <li>test2</li>
-            <li>test3</li>
-            <li>test4</li>
-        </ol>
-    </body>
+
+<head>
+    <title>First Web</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        * {
+                font-family: 'Poppins', sans-serif;
+        }
+        h1 {
+            color: tomato;
+            font-size: 60px;
+        }
+
+        .text {
+            color: brown;
+            font-size: 30px;
+        }
+
+        .quote {
+            background-color: rgb(212, 212, 212);
+            line-height: 50px;
+            padding: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: blueviolet; font-size:60px;">My First post</h1>
+    <h2>My First post</h2>
+    <h3>My First post</h3>
+    <h4>SubHeading</h4>
+    <h5>SubHeading</h5>
+    <h6>SubHeading</h6>
+    <p class="text">
+
+        What is Lorem Ipsum?
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+
+    </p>
+    <span style="color:dimgrey">Read more...</span>
+
+    <div class="quote">
+        What is Lorem Ipsum?
+        l be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+        that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+        making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+        as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+        Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and
+        the like).
+    </div>
+
+    <a href="https://www.youtube.com/">go to youtube</a>
+    <img src="https://i.imgur.com/2oTquxi.png" alt="facebook">
+    <ul>
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+        <li>test4</li>
+    </ul>
+    <hr>
+    <ol>
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+        <li>test4</li>
+    </ol>
+    <form action="">
+        <!--指定一個位址 (URL)，這個位址是告訴瀏覽器 (browser) 當 user 按送出表單後，要將表格的內容送去哪邊。 -->
+        <label for=""></label>
+        <p><input type="text" name="foo"></p>
+        <input type="text" name="foo" autofocus>
+        <input type="text" name="foo" disabled>
+        <input type="submit" value="送出">
+        <textarea rows="5" cols="100">
+
+    輸入欄位中的預設文字內容
+    
+  </textarea>
+    </form>
+
+    <form action=""">
+
+        <p>Name:</p>
+        <p><input type="text" name="name" value="你的名字"></p>
+    
+        <p>Email:</p>
+        <p><input name="species" type="text"></p>
+
+        <p>Password:</p>
+        <p><input type="password" type="text"></p>
+    
+        <p>Comments: </p>
+        <p><textarea name="comments" rows="5" cols="20">你的留言</textarea></p>
+
+        <p>請問你最有興趣學習的技術:</p>
+        <p><input type="radio" name="interest" value="html"> HTML</p>
+        <p><input type="radio" name="interest" value="css"> CSS</p>
+        <p><input type="radio" name="interest" value="js"> JavaScript</p>
+        <p>你的年級</p>
+        <select>
+            <option>一年級</option>
+            <option>二年級</option>
+            <option value="3">三年級</option>
+        </select>
+        <p>還想學到什麼</p>
+        <input type="checkbox">
+        <label for="vehicle1">設計</label>
+        <input type="checkbox">
+        <label for="vehicle1">影像處理</label>
+
+        <p><input type="submit" value="送出資料"></p>
+    
+    </form>
+</body>
+
 </html>

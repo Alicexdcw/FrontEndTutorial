@@ -15,9 +15,9 @@ section{
     min-height: 100vh; /*不管裡面有沒有東西，先把高度撐篙*/
     padding: 100px;
     /*排列方式*/
-    /* display: flex;
+    display: flex;
     justify-content: space-between; 
-    align-items: center; */
+    align-items: center;
     background: #fff;
 }
 
@@ -29,7 +29,7 @@ header{
     padding: 20px 100px;
     display: flex;
     align-items: center;
-    /* justify-content: space-between;  */
+    justify-content: space-between; 
 }
 
 .logo{
@@ -38,7 +38,6 @@ header{
 }
 
 header ul{
-    position: relative;
     display: flex;
 }
 
@@ -86,7 +85,6 @@ header ul li a{
 }
 
 .content .textBox a{
-    color: #333;
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
