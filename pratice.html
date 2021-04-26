@@ -9,6 +9,7 @@
     <style>
         * {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* font-size: 0; */
         }
 
         .date {
@@ -35,57 +36,168 @@
             border-radius: 5px; */
         }
 
-        .readMore {
+        .readMorebtn {
             background-color: #4CAF50;
-            /* Green */
             border: none;
             color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
             font-size: 16px;
-            margin-top: 10px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 8px;
+            cursor: pointer;
+            /*游標變手指*/
+
+
+        }
+
+        .readMore:hover {
+            background-color: cadetblue;
         }
 
         .context {
+            /* float: left; */
+            display: inline-block;
             width: 33.3%;
-            float: left;
+            /* border: 1px solid #ccc; */
+            padding: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            /* margin: 1%; */
         }
 
-        .pharse {
+        .main-block {
+            margin-top: 5%;
             float: left;
+            width: 50%;
+            border: 5px solid #ccc;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        #side-block {
+            margin-top: 5%;
+            float: right;
+            width: 30%;
+            border: 5px solid #ccc;
+            box-sizing: border-box;
+            padding: 10px;
         }
 
         .clear {
             clear: both;
         }
 
-
-        #BigDiv {
-            width: 800px;
-            height: 190px;
-            font-size: 13px;
-            color: #333333;
-            line-height: 22px;
+        .link {
+            padding: 10px;
+            margin: 10px;
+            border: cadetblue 3px solid;
+            /* width: 200px; */
+            display: inline-block;
+            text-decoration: none;
         }
 
-        #FloatDiv {
-            width: 500px;
-            height: 120px;
-            background-color: #DBABFF;
-            margin-right: 10px;
+        .around {
+            width: 60%;
+        }
+
+        .aroundimg {
             float: left;
+            margin: 0 2% 2% 0;
         }
 
-        .pharse {
-            float: left;
+        .box {
+            border: 5px solid green;
+            padding: 10px;
+            width: 80%;
         }
+
+        .imgtest {
+            float: right;
+            height: 350px;
+        }
+
+        .testbox {
+            background: rgb(233, 214, 41);
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: steelblue 5px solid;
+            float: left;
+            /* position: relative; */
+            /* top: 20px;
+            left: 10px; */
+            /* display: inline-block; */
+        }
+
+        .testbox2 {
+            background: rgb(252, 145, 45);
+            width: 300px;
+            height: 350px;
+            padding: 20px;
+            /* border: steelblue 5px solid; */
+            float: left;
+            /* position: relative; */
+            /* top: 20px;
+            left: 10px; */
+            /* display: inline-block; */
+        }
+
+        .testboxa {
+            /* background: rgb(127, 233, 41); */
+            width: 900px;
+            padding: 20px;
+            border: steelblue 5px dotted;
+            /* background: lightgray; */
+            /* position: relative; */
+            /* float: left; */
+            /* display: inline-block; */
+        }
+
+
+        .spanword {
+            background: lightcoral;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+            border: steelblue 5px solid;
+            /* display: inline-block; */
+            float: left;
+            font-size: 16px;
+        }
+
+        .aroundspan {
+            /* height: 280px; */
+            overflow: auto;
+        }
+
+        .text{
+            margin-right: 10%;
+            /* border: 1px solid #ccc; */
+        }
+        
     </style>
 </head>
 
 <body>
     <div class="contect">
+        <!-- <div class="testboxa clear">
+            <div class="testbox">i'm float A</div>
+            <div class="testbox2">i'm float B</div>
+            
+        </div> -->
+        <!-- <div class="testboxa">i'm block</div> -->
+        <div class="clear"></div>
+        <div class="aroundspan">
+            <span class="spanword">i'm inline</span>
+            <span class="spanword" style="height: 500px;">i'm inline</span>
+            <span class="spanword">i'm inline</span>
+            <span class="spanword">i'm inline</span>
+            <span class="spanword">i'm inline</span>
+        </div>
+        <!-- <div class="clear"></div> -->
+        <!-- </div> -->
+
         <h1>
             We are Excited to Learn CSS
         </h1>
@@ -102,76 +214,159 @@
             Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
             versions
             of Lorem Ipsum. <br>
-            <button class="readMore">Read more...</button>
+            <!-- <button>Read More....</button>  -->
+            <a href="https://youtube.com"><button class="readMorebtn">Read more...</button></a>
+            
+
         </p>
 
         <h2>Where does it come from?</h2>
-        <div class="context">
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-            Latin
-            literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-            Hampden-Sydney
-            College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-            and
-            going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
-            comes
-            from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
-            Cicero,
-            written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The
-            first
-            line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        <div class="maincontext" style="font-size: 0;">
+            <div class="context">
+                <div class="text">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                    Latin
+                    literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                    Hampden-Sydney
+                    College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+                    passage,
+                    and
+                    going through the cites of the word in classical literature, discovered the undoubtable source. Lorem
+                    Ipsum
+                    comes
+                    from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+                    Cicero,
+                    written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+                    The
+                    first
+                    line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </div>
+               
+            </div>
+            <div class="context">
+                <div class="text">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                    Latin
+                    literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                    Hampden-Sydney
+                    College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+                    passage,
+                    and
+                    going through the cites of the word in classical literature, discovered the undoubtable source. Lorem
+                    Ipsum
+                    comes
+                    from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+                    Cicero,
+                    written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+                    The
+                    first
+                    line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </div>
+            </div>
+            <div class="context">
+                <div class="text">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                    Latin
+                    literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                    Hampden-Sydney
+                    College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+                    passage,
+                    and
+                    going through the cites of the word in classical literature, discovered the undoubtable source. Lorem
+                    Ipsum
+                    comes
+                    from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+                    Cicero,
+                    written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+                    The
+                    first
+                    line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </div>
+            </div>
         </div>
-        <div class="context">
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-            Latin
-            literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-            Hampden-Sydney
-            College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-            and
-            going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
-            comes
-            from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
-            Cicero,
-            written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The
-            first
-            line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+        <div class="clear"></div>
+
+        <div class="main-block">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quae ea praesentium eum, amet dolores ut,
+                adipisci sapiente nesciunt alias ullam voluptatibus consectetur perferendis aliquam nostrum non eveniet
+                repellat soluta!</p>
         </div>
-        <div class="context">
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-            Latin
-            literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-            Hampden-Sydney
-            College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-            and
-            going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
-            comes
-            from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
-            Cicero,
-            written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The
-            first
-            line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+        <div id="side-block">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nihil debitis perferendis repellendus
+                minus. Numquam blanditiis natus labore amet dolorum rem rerum doloremque obcaecati illo dolore! Deserunt
+                minus quis perspiciatis.</p>
         </div>
         <div class="clear"></div>
-<div class="test" style="width: 300px;">
-    <img class="pharse" style="width: 50%;" src="https://i.imgur.com/wnYYZMt.jpg" alt="">
-    <div class="pharse"  style="width: 500px;"></div>
-    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-    Latin
-    literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-    Hampden-Sydney
-    College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-    and
-    going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
-    comes
-    from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
-    Cicero,
-    written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The
-    first
-    line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+        <div class="around">
+            <img class="aroundimg" src="images/shutterstock_1028852338.png" alt="風景照" style="width: 20%;">
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                Latin
+                literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                Hampden-Sydney
+                College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+                passage,
+                and
+                going through the cites of the word in classical literature, discovered the undoubtable source. Lorem
+                Ipsum
+                comes
+                from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+                Cicero,
+                written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+                The
+                first
+                line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+        </div>
+        <!-- <div class="clear"></div> -->
+
+        <div class="box">
+            <h2> 猩猩問號 </h2>
+            <img class="imgtest"
+                src="http://www.telegraph.co.uk/content/dam/news/2017/09/11/TELEMMGLPICT000035012721-xlarge_trans_NvBQzQNjv4BqRno0wBcbj8R7Bar7Q2cKrNST-j3MfP1ZOcJQAQJZGH8.jpeg"
+                alt="An Image"">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perspiciatis cumque, animi consequatur
+                quaerat laboriosam quam. Dolore deleniti accusamus eum voluptatibus accusantium dignissimos minus
+                corrupti est quas tempora eveniet provident ab quisquam eos maiores veritatis reiciendis neque
+                perspiciatis non laudantium expedita, incidunt iusto nemo. Deserunt maxime fugit saepe nulla expedita.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam inventore necessitatibus reprehenderit
+                debitis alias. Consequuntur necessitatibus nesciunt cum quis alias modi libero quae deleniti ratione
+                incidunt explicabo consequatur fugiat ea, quasi ut rerum porro pariatur vero mollitia nisi quidem
+                accusamus? Inventore rerum dolore ducimus alias. Officia iusto ipsa obcaecati labore velit. Nostrum,
+                tenetur sequi quidem in laboriosam, magni molestias molestiae, asperiores maiores provident cumque? Ipsa
+                ab sed libero itaque repellat cumque, reiciendis excepturi amet soluta earum natus. Facilis perferendis,
+                ea voluptatum eius, nam impedit nihil amet repellat, accusantium eveniet doloremque minima eum quisquam
+                debitis error odio. Ex deleniti beatae cum esse similique voluptatum, repellat nam minima facere commodi
+                qui dicta eaque dolore, totam tempora veniam, optio repudiandae inventore aut modi odio delectus quam?
+                Sed laboriosam quod necessitatibus mollitia. Labore ad illum deleniti ut, consequatur dolore minima
+                ullam porro quibusdam provident nesciunt quam sequi unde, alias officia quis, dignissimos iure
+                voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, neque quae! Voluptates culpa quam eos
+                placeat id non similique ipsa, nesciunt cum porro, asperiores vero. Fuga labore illo ratione natus? Enim
+                voluptatem molestiae id eaque maiores odio ea quidem, unde libero beatae tenetur ullam cupiditate
+                exercitationem provident officiis quisquam tempore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quos adipisci id dolore sed eveniet ut
+                consectetur sapiente praesentium suscipit laborum dicta, voluptatem asperiores inventore veritatis unde
+                debitis facere rerum corrupti eius neque esse ratione doloremque cupiditate. Tenetur facere blanditiis
+                laborum eum autem hic sequi accusantium sit impedit molestias obcaecati, tempore doloribus recusandae
+                minima culpa dolorem! At quae, ab facere debitis repellendus, nulla dolorum voluptas asperiores hic
+                molestias neque minima delectus distinctio cum deleniti eum autem quas veniam id quam. Alias, ex nostrum
+                vero, velit veritatis ducimus ea expedita cupiditate hic numquam enim dicta ipsam illo odit iusto
+                perferendis error!</p>
+
+                <div class=" clear">
+        </div>
+    </div>
+
+
+
+
+<div class="middle" style="height: 500px;width: 500px;">
+    <div class="middletext"></div>
 </div>
-
-            
-
     </div>
 
 </body>
