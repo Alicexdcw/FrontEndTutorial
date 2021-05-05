@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/*header*/
+
+header{
+    padding: 20px 100px;
+    top: 0px;
+    left: 0px;
+    max-height: 146px;
+    position: relative;
+}
+
+header > img{
+    width: 80px;
+}
+
+header > ul {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 100px;
+
+}
+
+header > ul > li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+/*header*/
+
+/*content*/
+
+.content{
+    margin: 80px 100px;
+}
+
+.textBox{
+    /* width: 40%; */
+    max-width: 600px;
+    display: inline-block;
+}
+
+.textBox > h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.textBox > h2 > span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+
+.textBox > a > button{
+    background: #017143;
+    color: #fff;
+    padding: 10px 16px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.imgbox{
+    display: inline-block;
+    position: absolute;
+    right: 200px;
+}
+
+.imgbox > img{
+    width: 340px;
+}
+
+.sci{
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    right: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sci > ul{
+    list-style: none;
+}
+
+.sci > ul > li{
+    margin-top: 20px;
+}
+
+.sci > ul > li > a > img{
+   transform: scale(0.5);
+   filter: invert(1);
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    /* clip-path: circle(600px at center); */
+    clip-path: circle(600px at right 800px);
+}
+
+.thumb{
+    left: 50%;
+    transform: translateX(-50%);
+    position:absolute;
+    bottom: 120px;
+}
+
+.thumb > ul {
+    list-style: none;
+}
+
+.thumb > ul > li {
+    display: inline-block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.thumb ul > li:hover {
+    transform: translateY(-15px);
+}
+
+.thumb img{
+    max-width: 60px;
+    margin: 0 20px;
+}

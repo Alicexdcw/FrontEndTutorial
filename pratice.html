@@ -112,8 +112,13 @@
         }
 
         .imgtest {
-            float: right;
             height: 350px;
+            display: inline-block;
+        }
+
+        .box {
+            display: inline-block;
+            width: 70%;
         }
 
         .testbox {
@@ -171,32 +176,56 @@
             overflow: auto;
         }
 
-        .text{
+        .text {
             margin-right: 10%;
             /* border: 1px solid #ccc; */
         }
-        
+
+
+        .boxaa {
+            width: 33.3%;
+            height: 200px;
+            background-color: rgb(28, 147, 177);
+            padding: 20px;
+            border: 3px solid rgb(16, 94, 114);
+            box-sizing: border-box;
+            border-radius: 4px;
+            /* display: inline-block; */
+            float: left;
+            color: wheat;
+
+            font-size: 16px;
+        }
+
+        .picture {
+            position: relative;  
+            width: 100%; 
+            max-width: 300px;
+            text-align: center;
+        }
+        .picture img{
+            width: 100%;
+            height: auto;
+        }
+
+        .texta{
+            display: inline-block;
+            width: 300px;
+        }
+        .button {
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translateY(-50%);
+            transform: translateX(-50%);
+            /* text-align: center; */
+            
+        }
     </style>
 </head>
 
 <body>
     <div class="contect">
-        <!-- <div class="testboxa clear">
-            <div class="testbox">i'm float A</div>
-            <div class="testbox2">i'm float B</div>
-            
-        </div> -->
-        <!-- <div class="testboxa">i'm block</div> -->
-        <div class="clear"></div>
-        <div class="aroundspan">
-            <span class="spanword">i'm inline</span>
-            <span class="spanword" style="height: 500px;">i'm inline</span>
-            <span class="spanword">i'm inline</span>
-            <span class="spanword">i'm inline</span>
-            <span class="spanword">i'm inline</span>
-        </div>
-        <!-- <div class="clear"></div> -->
-        <!-- </div> -->
 
         <h1>
             We are Excited to Learn CSS
@@ -216,48 +245,64 @@
             of Lorem Ipsum. <br>
             <!-- <button>Read More....</button>  -->
             <a href="https://youtube.com"><button class="readMorebtn">Read more...</button></a>
-            
+
 
         </p>
+
+        <div class="picture">
+            <img src="https://picsum.photos/300/300" alt="">
+            <div class="button">
+                <button>aaa</button>
+            </div>
+
+        </div>
 
         <h2>Where does it come from?</h2>
         <div class="maincontext" style="font-size: 0;">
             <div class="context">
                 <div class="text">
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical
                     Latin
                     literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
                     Hampden-Sydney
                     College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
                     passage,
                     and
-                    going through the cites of the word in classical literature, discovered the undoubtable source. Lorem
+                    going through the cites of the word in classical literature, discovered the undoubtable source.
+                    Lorem
                     Ipsum
                     comes
-                    from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+                    from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
+                    by
                     Cicero,
-                    written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+                    written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
+                    Renaissance.
                     The
                     first
                     line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                 </div>
-               
+
             </div>
             <div class="context">
                 <div class="text">
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical
                     Latin
                     literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
                     Hampden-Sydney
                     College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
                     passage,
                     and
-                    going through the cites of the word in classical literature, discovered the undoubtable source. Lorem
+                    going through the cites of the word in classical literature, discovered the undoubtable source.
+                    Lorem
                     Ipsum
                     comes
-                    from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+                    from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
+                    by
                     Cicero,
-                    written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+                    written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
+                    Renaissance.
                     The
                     first
                     line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -265,19 +310,23 @@
             </div>
             <div class="context">
                 <div class="text">
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical
                     Latin
                     literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
                     Hampden-Sydney
                     College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
                     passage,
                     and
-                    going through the cites of the word in classical literature, discovered the undoubtable source. Lorem
+                    going through the cites of the word in classical literature, discovered the undoubtable source.
+                    Lorem
                     Ipsum
                     comes
-                    from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+                    from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
+                    by
                     Cicero,
-                    written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+                    written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
+                    Renaissance.
                     The
                     first
                     line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -324,14 +373,18 @@
 
         <div class="box">
             <h2> 猩猩問號 </h2>
-            <img class="imgtest"
+            <div class="imgtest">
+                <img class="imgtest"
                 src="http://www.telegraph.co.uk/content/dam/news/2017/09/11/TELEMMGLPICT000035012721-xlarge_trans_NvBQzQNjv4BqRno0wBcbj8R7Bar7Q2cKrNST-j3MfP1ZOcJQAQJZGH8.jpeg"
                 alt="An Image"">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perspiciatis cumque, animi consequatur
-                quaerat laboriosam quam. Dolore deleniti accusamus eum voluptatibus accusantium dignissimos minus
-                corrupti est quas tempora eveniet provident ab quisquam eos maiores veritatis reiciendis neque
-                perspiciatis non laudantium expedita, incidunt iusto nemo. Deserunt maxime fugit saepe nulla expedita.
-            </p>
+            </div>
+                <p class="texta">
+                   
+                        corrupti est quas tempora eveniet provident ab quisquam eos maiores veritatis reiciendis neque
+                        perspiciatis non laudantium expedita, incidunt iusto nemo. Deserunt maxime fugit saepe nulla expedita.
+                    
+                </p>
+            
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam inventore necessitatibus reprehenderit
                 debitis alias. Consequuntur necessitatibus nesciunt cum quis alias modi libero quae deleniti ratione
                 incidunt explicabo consequatur fugiat ea, quasi ut rerum porro pariatur vero mollitia nisi quidem
@@ -362,11 +415,6 @@
     </div>
 
 
-
-
-<div class="middle" style="height: 500px;width: 500px;">
-    <div class="middletext"></div>
-</div>
     </div>
 
 </body>

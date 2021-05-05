@@ -7,42 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .middle {
-            width: 600px;
-            height: 500px;
-            border: 1px solid #66be12;
-        }
-
-        .middle::after {
-            content: "";
-            width: 20px;
-            height: 100%;
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .middletext {
-            font-size: large;
-            width: 400px;
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .boxa {
-            width: 200px;
-            height: 200px;
-            background: coral;
-        }
-
-        .boxb {
-            width: 100px;
-            height: 100px;
-            background: rgb(110, 38, 12);
-            position: relative;
-            top: 20px;
-            left: 20px;
-        }
-
         .container div {
             font-size: 2rem;
             width: 100%;
@@ -68,24 +32,102 @@
             padding:0;
             margin: 0;
         }
+        .boxa {
+            width: 200px;
+            height: 200px;
+            background: coral;
+            position: relative;
+        }
+
+        .boxb {
+            width: 100px;
+            height: 100px;
+            background: rgb(110, 38, 12);
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+        .boxc{
+            width: 100px;
+            height: 100px;
+            background: rgb(255, 203, 31);
+            position:relative;
+            top: 10px;
+            left: 10px;
+        }
+        .middle {
+            width: 600px;
+            height: 500px;
+            border: 1px solid #66be12;
+            
+            text-align: center;
+            /* display: table; */
+            /* line-height: 500px; */
+        }
+
+        .middle::after{
+            content: "";
+            width:10px;
+            height: 100%;
+            /* background-color: blueviolet; */
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .middletext{
+            display: inline-block;
+            width: 200px;
+            vertical-align: middle;
+            /* top: 50%;
+            position: relative;
+            transform: translateY(-50%); */
+            /* display: table-cell;
+            vertical-align: middle; */
+        }
+
+        /* .middle::after {
+            content: "";
+            width: 20px;
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .middletext {
+            font-size: large;
+            width: 400px;
+            display: inline-block;
+            vertical-align: middle;
+        } */
     </style>
 </head>
 
 <body>
-    <!-- <div class="middle">
-        <div class="middletext">
-            i want to middle i want to middle i want to middle i want to middle i want to middle
+    <div class="middle">
+        <div class="qq">
+
         </div>
-    </div> -->
-    <!-- <div class="boxa"></div>
-    <div class="boxb">
-    </div> -->
-    <div class="boxv">
-<img src="images/shutterstock_1028852338.png" alt="">
+        <div class="middletext">
+            i want to middle  i want to middle
+            i want to middlei want to middlei want to middlei want to middlei want to middlei want to middle
+        </div>
     </div>
+
+
+    <div class="boxa">
+        Box A
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos est quas expedita quam, quia mollitia 
+        <div class="boxc">
+            Box C
+        </div>
+
+    </div>       
+     <div class="boxb">
+            Box B
+        </div>
     <div class="container">
 
-        <!-- <div>
+        <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum mollitia repudiandae voluptatem,
             nemo
             similique repellat voluptate dolor cumque iusto ullam corrupti ratione atque perferendis quod tempora
@@ -99,7 +141,39 @@
                     dolores eos?
                 </div>
             </div>
-        </div> -->
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum mollitia repudiandae voluptatem,
+            nemo
+            similique repellat voluptate dolor cumque iusto ullam corrupti ratione atque perferendis quod tempora
+            tenetur,
+            dolores eos?
+            <div>
+                repellat voluptate dolor cumque iusto ullam corrupti ratione atque perferendis quod tempora tenetur,
+                dolores eos?
+                <div>
+                    repellat voluptate dolor cumque iusto ullam corrupti ratione atque perferendis quod tempora tenetur,
+                    dolores eos?
+                </div>
+            </div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum mollitia repudiandae voluptatem,
+            nemo
+            similique repellat voluptate dolor cumque iusto ullam corrupti ratione atque perferendis quod tempora
+            tenetur,
+            dolores eos?
+            <div>
+                repellat voluptate dolor cumque iusto ullam corrupti ratione atque perferendis quod tempora tenetur,
+                dolores eos?
+                <div>
+                    repellat voluptate dolor cumque iusto ullam corrupti ratione atque perferendis quod tempora tenetur,
+                    dolores eos?
+                </div>
+            </div>
+        </div>
+
+        
         
     </div>
 
