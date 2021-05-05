@@ -127,8 +127,8 @@ p {
 }
 
 .footer a:hover {
-    fill: rgb(242, 74, 248);
-    border: 1px rgb(242, 74, 248) solid;
+    fill: rgb(213, 36, 219);
+    border: 1px rgb(213, 36, 219) solid;
 }
 
 .footer > hr {
