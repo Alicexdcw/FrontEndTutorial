@@ -1,10 +1,14 @@
 # font:
 ### startbucks
+```css
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 font-family: 'Poppins', sans-serif;
+```
 ### bio
+```css
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,200,200italic");
 font-family: "Source Sans Pro", sans-serif;
+```
 ### Social media icon
 ```html
 <!--FB-->
