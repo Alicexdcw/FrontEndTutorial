@@ -13,9 +13,9 @@
     <section>
         <div class="circle"></div>
         <header>
-            <a href="#"><img src="images/logo.png" class="logo"></a>
-            <!-- <div class="toggle" onclick="toggleMenu()"></div> -->
-            <ul>
+            <a href="#" ><img src="images/logo.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation" onclick="toggleMenu()">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">What's New</a></li>
@@ -60,7 +60,13 @@
             document.querySelector('.circle').style.background = color;
             // const circle = document.querySelector('.circle');
             // circle.style.background = color;
-            
+
+        }
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            menuToggle.classList.toggle('active');
+            var navigation = document.querySelector('.navigation');
+            navigation.classList.toggle('active');
         }
     </script>
 </body>
